@@ -1,0 +1,947 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>namenode-02 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="datanode-01.html" />
+    
+    
+    <link rel="prev" href="namenode01-copy-config.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    hadoop-ha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basic/basic.html">
+            
+                <a href="../basic/basic.html">
+            
+                    
+                    基础准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../jdk/jdk.html">
+            
+                <a href="../jdk/jdk.html">
+            
+                    
+                    jdk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../zk/zk.html">
+            
+                <a href="../zk/zk.html">
+            
+                    
+                    zk-cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../zk/zk-cluster.html">
+            
+                <a href="../zk/zk-cluster.html">
+            
+                    
+                    初始化虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../zk/zk01.html">
+            
+                <a href="../zk/zk01.html">
+            
+                    
+                    zk01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../zk/zk02.html">
+            
+                <a href="../zk/zk02.html">
+            
+                    
+                    zk02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../zk/zk03.html">
+            
+                <a href="../zk/zk03.html">
+            
+                    
+                    zk03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../journalnode/journalnode.html">
+            
+                <a href="../journalnode/journalnode.html">
+            
+                    
+                    journalnode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.5.1" data-path="../journalnode/zk01.html">
+            
+                <a href="../journalnode/zk01.html">
+            
+                    
+                    zk01
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="hdfs.html">
+            
+                <a href="hdfs.html">
+            
+                    
+                    hdfs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="namenode01.html">
+            
+                <a href="namenode01.html">
+            
+                    
+                    namenode-01
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="namenode01-copy-soft.html">
+            
+                <a href="namenode01-copy-soft.html">
+            
+                    
+                    分发软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" data-path="namenode01-copy-config.html">
+            
+                <a href="namenode01-copy-config.html">
+            
+                    
+                    分发配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.2" data-path="namenode02.html">
+            
+                <a href="namenode02.html">
+            
+                    
+                    namenode-02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="datanode-01.html">
+            
+                <a href="datanode-01.html">
+            
+                    
+                    datanode-01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="datanode-02.html">
+            
+                <a href="datanode-02.html">
+            
+                    
+                    datanode-02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="datanode-03.html">
+            
+                <a href="datanode-03.html">
+            
+                    
+                    datanode-03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="hdfs-test.html">
+            
+                <a href="hdfs-test.html">
+            
+                    
+                    test hdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../yarn/yarn.html">
+            
+                <a href="../yarn/yarn.html">
+            
+                    
+                    yarn
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../yarn/yarn-01.html">
+            
+                <a href="../yarn/yarn-01.html">
+            
+                    
+                    yarn-01
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.1" data-path="../yarn/yarn-01-copy-config.html">
+            
+                <a href="../yarn/yarn-01-copy-config.html">
+            
+                    
+                    分发配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../yarn/yarn-02.html">
+            
+                <a href="../yarn/yarn-02.html">
+            
+                    
+                    yarn-02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../yarn/config-hosts.html">
+            
+                <a href="../yarn/config-hosts.html">
+            
+                    
+                    配置node hosts 文件 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../yarn/yarn-start.html">
+            
+                <a href="../yarn/yarn-start.html">
+            
+                    
+                    yarn-启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../hbase/hbase.html">
+            
+                <a href="../hbase/hbase.html">
+            
+                    
+                    hbase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../hbase/hbase-01.html">
+            
+                <a href="../hbase/hbase-01.html">
+            
+                    
+                    hbase-01
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1" data-path="../hbase/hbase-01-copy-soft.html">
+            
+                <a href="../hbase/hbase-01-copy-soft.html">
+            
+                    
+                    分发软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../hbase/hbase-02.html">
+            
+                <a href="../hbase/hbase-02.html">
+            
+                    
+                    hbase-02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../hbase/hbase-03.html">
+            
+                <a href="../hbase/hbase-03.html">
+            
+                    
+                    hbase-03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../hbase/hbase-04.html">
+            
+                <a href="../hbase/hbase-04.html">
+            
+                    
+                    hbase-04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../hbase/hbase-05.html">
+            
+                <a href="../hbase/hbase-05.html">
+            
+                    
+                    hbase-05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../hbase/hbase-01-config.html">
+            
+                <a href="../hbase/hbase-01-config.html">
+            
+                    
+                    hbase-01-config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="../hbase/hbase-01-config-copy.html">
+            
+                <a href="../hbase/hbase-01-config-copy.html">
+            
+                    
+                    hbase-01-config-copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.8" data-path="../hbase/hbase-start.html">
+            
+                <a href="../hbase/hbase-start.html">
+            
+                    
+                    hbase-strat
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../hive/hive.html">
+            
+                <a href="../hive/hive.html">
+            
+                    
+                    hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../hive/hive-01.html">
+            
+                <a href="../hive/hive-01.html">
+            
+                    
+                    hive-01
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >namenode-02</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <pre><code>172.16.99.105
+</code></pre><h3 id="config-hostname">config hostname</h3>
+<pre><code>hostnamectl  set-hostname namenode-02
+</code></pre><h3 id="sys-init">sys init</h3>
+<pre><code>sed -i &apos;s/enforcing/disabled/g&apos;  /etc/selinux/config
+setenforce 0
+sed -i &apos;s/#UseDNS yes/UseDNS no/g&apos;   /etc/ssh/sshd_config
+systemctl   restart sshd
+systemctl  disable firewalld NetworkManager
+systemctl  stop  firewalld  NetworkManager
+</code></pre><h3 id="config-ntp">config ntp</h3>
+<pre><code>yum -y install ntpdate
+ntpdate ntp1.aliyun.com
+</code></pre><pre><code>yum -y install ntp
+systemctl  enable  ntpd
+</code></pre><pre><code>cat &gt;   /etc/ntp.conf  &lt;&lt; EOF
+driftfile /var/lib/ntp/drift
+restrict default nomodify notrap nopeer noquery
+restrict 127.0.0.1 
+restrict ::1
+server ntp1.aliyun.com iburst  iburst
+logfile /var/log/ntp.log
+includefile /etc/ntp/crypto/pw
+keys /etc/ntp/keys
+disable monitor
+EOF
+</code></pre><pre><code>systemctl  start   ntpd
+ntpq -p
+</code></pre><h3 id="config-hosts-file">config hosts file</h3>
+<pre><code>cat /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.16.99.101  zk01
+172.16.99.102  zk02
+172.16.99.103  zk03
+172.16.99.104  namenode-01
+172.16.99.105  namenode-02
+
+172.16.99.106  datanode-01
+172.16.99.107  datanode-02
+172.16.99.108  datanode-03
+</code></pre><pre><code>source  /etc/profile
+</code></pre><h3 id="hadoop-install">hadoop install</h3>
+<pre><code>tar xzvf /opt/hadoop-2.7.4.tar.gz  -C /usr/local/
+</code></pre><pre><code>vim /usr/local/hadoop-2.7.4/etc/hadoop/hadoop-env.sh
+</code></pre><pre><code>export JAVA_HOME=${JAVA_HOME}
+export JAVA_HOME=/usr/local/jdk1.8.0_191/
+</code></pre><pre><code>cat &gt; /usr/local/hadoop-2.7.4/etc/hadoop/core-site.xml  &lt;&lt; EOF
+&lt;configuration&gt;
+    &lt;!-- &#x6307;&#x5B9A;hdfs&#x7684;nameservice&#x4E3A;service1s --&gt;
+    &lt;property&gt;
+        &lt;name&gt;fs.defaultFS&lt;/name&gt;
+        &lt;value&gt;hdfs://mycluster&lt;/value&gt;
+    &lt;/property&gt;
+
+
+    &lt;!-- &#x58F0;&#x660E;journalnode&#x670D;&#x52A1;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x76EE;&#x5F55;--&gt;
+    &lt;property&gt;
+        &lt;name&gt;dfs.journalnode.edits.dir&lt;/name&gt;
+        &lt;value&gt;/opt/journalnode&lt;/value&gt;
+    &lt;/property&gt;
+
+
+    &lt;!-- &#x6307;&#x5B9A;hadoop&#x8FD0;&#x884C;&#x65F6;&#x4EA7;&#x751F;&#x6587;&#x4EF6;&#x7684;&#x5B58;&#x50A8;&#x76EE;&#x5F55; --&gt;
+
+    &lt;property&gt;
+        &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
+        &lt;value&gt;/opt/hadoop/tmp&lt;/value&gt;
+    &lt;/property&gt;
+
+    &lt;!-- &#x6307;&#x5B9A;zookeeper&#x5730;&#x5740; --&gt;
+    &lt;property&gt;
+        &lt;name&gt;ha.zookeeper.quorum&lt;/name&gt;
+        &lt;value&gt;zk01:2181,zk02:2181,zk03:2181&lt;/value&gt;
+    &lt;/property&gt;
+
+&lt;/configuration&gt;
+EOF
+</code></pre><pre><code>mkdir  -p  /opt/hadoop/tmp
+</code></pre><pre><code>cat &gt; /usr/local/hadoop-2.7.4/etc/hadoop/hdfs-site.xml &lt;&lt; EOF
+&lt;configuration&gt;
+        &lt;!--&#x6307;&#x5B9A;hdfs&#x7684;nameservice&#x4E3A;mycluster&#xFF0C;&#x9700;&#x8981;&#x548C;core-site.xml&#x4E2D;&#x7684;&#x4FDD;&#x6301;&#x4E00;&#x81F4; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.nameservices&lt;/name&gt;
+                &lt;value&gt;mycluster&lt;/value&gt;
+        &lt;/property&gt;
+
+        &lt;!-- mycluster&#x4E0B;&#x9762;&#x6709;&#x4E24;&#x4E2A;NameNode&#xFF0C;&#x5206;&#x522B;&#x662F; namenode-01,namenode-02 --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.ha.namenodes.mycluster&lt;/name&gt;
+                &lt;value&gt;namenode-01,namenode-02&lt;/value&gt;
+        &lt;/property&gt;
+
+        &lt;!-- namenode-01&#x7684;RPC&#x901A;&#x4FE1;&#x5730;&#x5740; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.namenode.rpc-address.mycluster.namenode-01&lt;/name&gt;
+                &lt;value&gt;namenode-01:9000&lt;/value&gt;
+        &lt;/property&gt;
+
+        &lt;!-- namenode-01&#x7684;http&#x901A;&#x4FE1;&#x5730;&#x5740; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.namenode.http-address.mycluster.namenode-01&lt;/name&gt;
+                &lt;value&gt;namenode-01:50070&lt;/value&gt;
+        &lt;/property&gt;
+
+
+        &lt;!-- namenode-02&#x7684;RPC&#x901A;&#x4FE1;&#x5730;&#x5740; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.namenode.rpc-address.mycluster.namenode-02&lt;/name&gt;
+                &lt;value&gt;namenode-02:9000&lt;/value&gt;
+        &lt;/property&gt;
+
+        &lt;!-- namenode-02&#x7684;http&#x901A;&#x4FE1;&#x5730;&#x5740; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.namenode.http-address.mycluster.namenode-02&lt;/name&gt;
+                &lt;value&gt;namenode-02:50070&lt;/value&gt;
+        &lt;/property&gt;
+
+
+        &lt;!-- &#x6307;&#x5B9A;NameNode&#x7684;&#x5143;&#x6570;&#x636E;&#x5728;JournalNode&#x4E0A;&#x7684;&#x5B58;&#x653E;&#x4F4D;&#x7F6E; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.namenode.shared.edits.dir&lt;/name&gt;
+                &lt;value&gt;qjournal://zk01:8485;zk02:8485;zk03:8485/mycluster&lt;/value&gt;
+        &lt;/property&gt;
+
+
+        &lt;!-- &#x6307;&#x5B9A;JournalNode&#x5728;&#x672C;&#x5730;&#x78C1;&#x76D8;&#x5B58;&#x653E;&#x6570;&#x636E;&#x7684;&#x4F4D;&#x7F6E; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.journalnode.edits.dir&lt;/name&gt;
+                &lt;value&gt;/opt/hadoop/journal&lt;/value&gt;
+        &lt;/property&gt;
+
+
+        &lt;!-- &#x5F00;&#x542F;NameNode&#x5931;&#x8D25;&#x81EA;&#x52A8;&#x5207;&#x6362; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.ha.automatic-failover.enabled&lt;/name&gt;
+                &lt;value&gt;true&lt;/value&gt;
+        &lt;/property&gt;
+
+
+
+        &lt;!-- &#x914D;&#x7F6E;&#x5931;&#x8D25;&#x81EA;&#x52A8;&#x5207;&#x6362;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.client.failover.proxy.provider.mycluster&lt;/name&gt;
+                &lt;value&gt;org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;!-- &#x914D;&#x7F6E;&#x9694;&#x79BB;&#x673A;&#x5236;&#x65B9;&#x6CD5;&#xFF0C;&#x591A;&#x4E2A;&#x673A;&#x5236;&#x7528;&#x6362;&#x884C;&#x5206;&#x5272;&#xFF0C;&#x5373;&#x6BCF;&#x4E2A;&#x673A;&#x5236;&#x6682;&#x7528;&#x4E00;&#x884C;--&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.ha.fencing.methods&lt;/name&gt;
+                &lt;value&gt;
+                        sshfence
+                        shell(/bin/true)
+                &lt;/value&gt;
+        &lt;/property&gt;
+
+
+        &lt;!-- &#x4F7F;&#x7528;sshfence&#x9694;&#x79BB;&#x673A;&#x5236;&#x65F6;&#x9700;&#x8981;ssh&#x514D;&#x767B;&#x9646; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.ha.fencing.ssh.private-key-files&lt;/name&gt;
+                &lt;value&gt;/root/.ssh/id_rsa&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;!-- &#x914D;&#x7F6E;sshfence&#x9694;&#x79BB;&#x673A;&#x5236;&#x8D85;&#x65F6;&#x65F6;&#x95F4; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.ha.fencing.ssh.connect-timeout&lt;/name&gt;
+                &lt;value&gt;30000&lt;/value&gt;
+        &lt;/property&gt;
+
+
+        &lt;!-- datanode &#x767D;&#x540D;&#x5355; --&gt;
+        &lt;property&gt;
+                &lt;name&gt;dfs.hosts&lt;/name&gt;
+                &lt;value&gt;/usr/local/hadoop-2.7.4/etc/hadoop/slaves&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;property&gt;
+               &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;
+               &lt;value&gt;file:///opt/hadoop/datanode&lt;/value&gt;
+        &lt;/property&gt;
+        &lt;property&gt;
+               &lt;name&gt;dfs.webhdfs.enabled&lt;/name&gt;
+               &lt;value&gt;true&lt;/value&gt;
+        &lt;/property&gt;
+
+
+     &lt;!-- &#x5173;&#x95ED;&#x6743;&#x9650;&#x68C0;&#x67E5;--&gt;
+     &lt;property&gt;
+        &lt;name&gt;dfs.permissions.enable&lt;/name&gt;
+        &lt;value&gt;false&lt;/value&gt;
+      &lt;/property&gt;
+&lt;/configuration&gt;
+EOF
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="namenode01-copy-config.html" class="navigation navigation-prev " aria-label="Previous page: 分发配置文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="datanode-01.html" class="navigation navigation-next " aria-label="Next page: datanode-01">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"namenode-02","level":"1.3.2.2","depth":3,"next":{"title":"datanode-01","level":"1.3.2.3","depth":3,"path":"hdfs/datanode-01.md","ref":"hdfs/datanode-01.md","articles":[]},"previous":{"title":"分发配置文件","level":"1.3.2.1.2","depth":4,"path":"hdfs/namenode01-copy-config.md","ref":"hdfs/namenode01-copy-config.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["search","-sharing","theme-default","lunr","fontsettings","livereload","highlight","-copy-code-button","chapter-fold","livereload"],"pluginsConfig":{"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"livereload":{},"highlight":{},"chapter-fold":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"hdfs/namenode02.md","mtime":"2020-02-05T18:31:59.529Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-10T02:02:20.303Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,19 @@
+{
+"plugins": [
+            "search",
+            "-sharing",
+            "theme-default",
+            "lunr",
+            "fontsettings",
+            "livereload",
+            "highlight",
+            "-copy-code-button",
+            "chapter-fold"
+],
+
+
+    "styles": {
+        "website": "styles/website.css"
+    }
+
+}

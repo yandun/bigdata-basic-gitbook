@@ -1,0 +1,13 @@
+Theoretically , you can have Nodemanager on a machine where you DO NOT have datanode but this is not useful practically .
+Hadoop has one fundamental rule : Data Locality So if you do not have datanode on the machine where you run nodemanager then system will move data to that node required for computation and it will slow down the process.
+Ideally, both Nodemanager and Datanode should run on a machine.
+Hope this helps
+
+
+理论上，您可以在没有datanode的计算机上使用nodemanager，但实际上这并不有用。
+hadoop有一个基本规则：数据局部性，因此如果在运行nodemanager的计算机上没有data node，那么系统将把数据移动到计算所需的节点，并且它将减慢进程。
+理想情况下，nodemanager和datanode都应该在计算机上运行。
+希望这有帮助
+
+
+

@@ -1,0 +1,801 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>hbase-05 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hbase-01-config.html" />
+    
+    
+    <link rel="prev" href="hbase-04.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    hadoop-ha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basic/basic.html">
+            
+                <a href="../basic/basic.html">
+            
+                    
+                    基础准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../jdk/jdk.html">
+            
+                <a href="../jdk/jdk.html">
+            
+                    
+                    jdk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../zk/zk.html">
+            
+                <a href="../zk/zk.html">
+            
+                    
+                    zk-cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../zk/zk-cluster.html">
+            
+                <a href="../zk/zk-cluster.html">
+            
+                    
+                    初始化虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../zk/zk01.html">
+            
+                <a href="../zk/zk01.html">
+            
+                    
+                    zk01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../zk/zk02.html">
+            
+                <a href="../zk/zk02.html">
+            
+                    
+                    zk02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../zk/zk03.html">
+            
+                <a href="../zk/zk03.html">
+            
+                    
+                    zk03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../journalnode/journalnode.html">
+            
+                <a href="../journalnode/journalnode.html">
+            
+                    
+                    journalnode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.5.1" data-path="../journalnode/zk01.html">
+            
+                <a href="../journalnode/zk01.html">
+            
+                    
+                    zk01
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../hdfs/hdfs.html">
+            
+                <a href="../hdfs/hdfs.html">
+            
+                    
+                    hdfs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../hdfs/namenode01.html">
+            
+                <a href="../hdfs/namenode01.html">
+            
+                    
+                    namenode-01
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="../hdfs/namenode01-copy-soft.html">
+            
+                <a href="../hdfs/namenode01-copy-soft.html">
+            
+                    
+                    分发软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" data-path="../hdfs/namenode01-copy-config.html">
+            
+                <a href="../hdfs/namenode01-copy-config.html">
+            
+                    
+                    分发配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../hdfs/namenode02.html">
+            
+                <a href="../hdfs/namenode02.html">
+            
+                    
+                    namenode-02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../hdfs/datanode-01.html">
+            
+                <a href="../hdfs/datanode-01.html">
+            
+                    
+                    datanode-01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../hdfs/datanode-02.html">
+            
+                <a href="../hdfs/datanode-02.html">
+            
+                    
+                    datanode-02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../hdfs/datanode-03.html">
+            
+                <a href="../hdfs/datanode-03.html">
+            
+                    
+                    datanode-03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../hdfs/hdfs-test.html">
+            
+                <a href="../hdfs/hdfs-test.html">
+            
+                    
+                    test hdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../yarn/yarn.html">
+            
+                <a href="../yarn/yarn.html">
+            
+                    
+                    yarn
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../yarn/yarn-01.html">
+            
+                <a href="../yarn/yarn-01.html">
+            
+                    
+                    yarn-01
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.1" data-path="../yarn/yarn-01-copy-config.html">
+            
+                <a href="../yarn/yarn-01-copy-config.html">
+            
+                    
+                    分发配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../yarn/yarn-02.html">
+            
+                <a href="../yarn/yarn-02.html">
+            
+                    
+                    yarn-02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../yarn/config-hosts.html">
+            
+                <a href="../yarn/config-hosts.html">
+            
+                    
+                    配置node hosts 文件 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../yarn/yarn-start.html">
+            
+                <a href="../yarn/yarn-start.html">
+            
+                    
+                    yarn-启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="hbase.html">
+            
+                <a href="hbase.html">
+            
+                    
+                    hbase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="hbase-01.html">
+            
+                <a href="hbase-01.html">
+            
+                    
+                    hbase-01
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1" data-path="hbase-01-copy-soft.html">
+            
+                <a href="hbase-01-copy-soft.html">
+            
+                    
+                    分发软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="hbase-02.html">
+            
+                <a href="hbase-02.html">
+            
+                    
+                    hbase-02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="hbase-03.html">
+            
+                <a href="hbase-03.html">
+            
+                    
+                    hbase-03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="hbase-04.html">
+            
+                <a href="hbase-04.html">
+            
+                    
+                    hbase-04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4.5" data-path="hbase-05.html">
+            
+                <a href="hbase-05.html">
+            
+                    
+                    hbase-05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="hbase-01-config.html">
+            
+                <a href="hbase-01-config.html">
+            
+                    
+                    hbase-01-config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="hbase-01-config-copy.html">
+            
+                <a href="hbase-01-config-copy.html">
+            
+                    
+                    hbase-01-config-copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.8" data-path="hbase-start.html">
+            
+                <a href="hbase-start.html">
+            
+                    
+                    hbase-strat
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../hive/hive.html">
+            
+                <a href="../hive/hive.html">
+            
+                    
+                    hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../hive/hive-01.html">
+            
+                <a href="../hive/hive-01.html">
+            
+                    
+                    hive-01
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >hbase-05</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <pre><code>172.16.99.117
+</code></pre><h3 id="config-hostname">config hostname</h3>
+<pre><code>hostnamectl  set-hostname hbase-05
+</code></pre><h3 id="sys-init">sys init</h3>
+<pre><code>sed -i &apos;s/enforcing/disabled/g&apos;  /etc/selinux/config
+setenforce 0
+sed -i &apos;s/#UseDNS yes/UseDNS no/g&apos;   /etc/ssh/sshd_config
+systemctl   restart sshd
+systemctl  disable firewalld NetworkManager
+systemctl  stop  firewalld  NetworkManager
+</code></pre><h3 id="config-ntp">config ntp</h3>
+<pre><code>yum -y install ntpdate
+ntpdate ntp1.aliyun.com
+</code></pre><pre><code>yum -y install ntp
+systemctl  enable  ntpd
+</code></pre><pre><code>cat &gt;   /etc/ntp.conf  &lt;&lt; EOF
+driftfile /var/lib/ntp/drift
+restrict default nomodify notrap nopeer noquery
+restrict 127.0.0.1 
+restrict ::1
+server ntp1.aliyun.com iburst  iburst
+logfile /var/log/ntp.log
+includefile /etc/ntp/crypto/pw
+keys /etc/ntp/keys
+disable monitor
+EOF
+</code></pre><pre><code>systemctl  start   ntpd
+ntpq -p
+</code></pre><h3 id="config-hosts-file">config hosts file</h3>
+<pre><code>cat /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.16.99.101  zk01
+172.16.99.102  zk02
+172.16.99.103  zk03
+172.16.99.104  namenode-01
+172.16.99.105  namenode-02
+
+172.16.99.113  hbase-01
+172.16.99.114  hbase-02
+172.16.99.115  hbase-03
+172.16.99.116  hbase-04
+172.16.99.117  hbase-05
+</code></pre><pre><code>tar xzvf /opt/hbase-2.0.5-bin.tar.gz   -C /usr/local/
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hbase-04.html" class="navigation navigation-prev " aria-label="Previous page: hbase-04">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hbase-01-config.html" class="navigation navigation-next " aria-label="Next page: hbase-01-config">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"hbase-05","level":"1.3.4.5","depth":3,"next":{"title":"hbase-01-config","level":"1.3.4.6","depth":3,"path":"hbase/hbase-01-config.md","ref":"hbase/hbase-01-config.md","articles":[]},"previous":{"title":"hbase-04","level":"1.3.4.4","depth":3,"path":"hbase/hbase-04.md","ref":"hbase/hbase-04.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["search","-sharing","theme-default","lunr","fontsettings","livereload","highlight","-copy-code-button","chapter-fold","livereload"],"pluginsConfig":{"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"livereload":{},"highlight":{},"chapter-fold":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"hbase/hbase-05.md","mtime":"2020-02-06T06:51:51.571Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-10T02:02:20.303Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+
+    </body>
+</html>
+
